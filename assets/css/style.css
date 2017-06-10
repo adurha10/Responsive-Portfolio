@@ -1,0 +1,275 @@
+html, body {
+  height: calc(100% - 21.5px);
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.push {
+  height: 50px;
+}
+
+body {
+	background-image: url(../images/pow-star.png);
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	max-width: 960px;
+	margin:0 auto;
+	padding: 15px;
+}
+
+header {
+	background: #ffffff;
+	padding: 0px, 15px, 0px, 15px;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: solid; 
+	border-bottom-color: #cccccc;
+}
+
+p {
+	padding: 10px;
+}
+
+h2 {
+	padding: 10px;
+	border-bottom: solid;
+	border-color: #cccccc;
+	color: #4aaaa5;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.form-sheet {
+	padding: 10px;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 120px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4aa5a5;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+.my-name {
+	font-family: 'Georgia', Times, serif;
+	float: left;
+	height: 70px;
+	width: 33%;
+	background: #4aaaa5; 
+	font-size: 2em;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	z-index: 100;
+}
+
+.header-links{
+	float: right;
+	text-align: right;
+	color: #777777;
+	font-size: 1.3em;
+	font-style: normal;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.border-right {
+	border-right: solid; 
+}
+
+.main-content {
+	overflow: auto;
+	float: left;
+	margin-top: 32px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 65%;
+	background: #ffffff;
+	text-align: left;
+}
+
+
+.contact-me {
+	float: right;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	background: #ffffff;
+	width: 25%;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.contact-me img {
+	height: 42px;
+	padding: 7px;
+}
+
+.portfolio {
+	float: left;
+	padding: 10px;
+}
+.portfolio-img {
+	position: relative;
+	height: 200px;
+}
+.text-overlay {
+	position: relative;
+	bottom: 105px;
+	font-family: 'Georgia', Times, serif;
+	height: 70px;
+	line-height: 70px;
+	background: #4aaaa5; 
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #fff;
+	margin: 0px;
+	opacity: 0.7;
+	text-align: center;
+	z-index: 100;
+}
+
+footer {
+	clear: both;
+	color: #ffffff;
+	border-top: solid #4aaaa5;
+	border-width: 10px;
+	width: 100%;
+	background: #666666;
+	text-align: center;
+	line-height: 3;
+}
+
+#headshot {
+	height: 200px;
+	float: left;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	body {
+		max-width: 768px;
+		font-size: 0.8em;
+	}
+
+	.my-name {
+		font-size: 1.6em;
+	}
+	.button {
+		font-size: 1.04em;
+	}
+
+	.text-overlay {
+		font-size: 1.04em;
+	}
+
+	.header-links {
+		font-size: 1.04em;
+	}
+
+	.contact-me {
+		width: 100%;
+		margin-bottom: 15px;
+		font-size: 0.8em;
+	}
+
+	.main-content {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	body {
+		max-width: 640px;
+		font-size: 0.6em;
+	}
+	
+	.my-name {
+		font-size: 1.2em;
+	}
+
+	.button {
+		font-size: 0.78em;
+	}
+
+	.header-links {
+		font-size: 0.78em;
+	}
+
+	.text-overlay {
+		font-size: 0.78em;
+	}
+
+	.contact-me {
+		width: 100%;
+		margin-bottom: 15px;
+		font-size: 0.6em;
+	}
+
+	.main-content {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+}
